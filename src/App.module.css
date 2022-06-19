@@ -1,0 +1,34 @@
+.App {
+  width: 75%;
+  margin: auto;
+}
+.insta {
+  text-align: center;
+}
+.Logo {
+  height: 15rem;
+  width: 30%;
+  margin: auto;
+}
+@media only screen and (max-width: 950px) {
+  .App {
+    width: 85%;
+    margin: auto;
+  }
+  .Logo {
+    height: 7rem;
+    width: 40%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .App {
+    width: 70%;
+    margin: auto;
+  }
+  .Logo {
+    height: 7rem;
+    width: 40%;
+    margin: auto;
+  }
+}
