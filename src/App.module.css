@@ -12,7 +12,7 @@
 }
 @media only screen and (max-width: 950px) {
   .App {
-    width: 90%;
+    width: 85%;
     margin: auto;
   }
   .Logo {
@@ -23,7 +23,7 @@
 }
 @media only screen and (max-width: 650px) {
   .App {
-    width: 100%;
+    width: 85%;
     margin: auto;
   }
   .Logo {

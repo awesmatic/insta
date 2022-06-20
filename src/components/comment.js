@@ -1,8 +1,13 @@
 import styles from "./comment.module.css";
 import { BsSuitHeartFill } from "react-icons/bs";
 import { BiCommentDots } from "react-icons/bi";
+import { useParams } from "react-router-dom";
 
-const Comment = ({ postData, commentData, code, setPostData }) => {
+const Comment = (props) => {
+  const { id } = useParams();
+  console.log(id);
+  console.log(props);
+  const { postData, commentData, code, setPostData } = props;
   let itemData = [];
   let Comments = commentData[code];
 
@@ -43,7 +48,8 @@ const Comment = ({ postData, commentData, code, setPostData }) => {
               <BsSuitHeartFill /> {itemData.likes}
             </button>
             <button className={styles.button}>
-              <BiCommentDots />
+              <BiCommentDots />{" "}
+              {commentData[code] ? commentData[code].length : 0}
             </button>
           </div>
         </div>

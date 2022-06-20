@@ -12,7 +12,7 @@ const InstaPage = ({
   let navigate = useNavigate();
 
   const commentButtonHandler = (code) => {
-    navigate("/comments");
+    navigate("/comments", { id: "kumar" });
     setCode(code);
   };
 
@@ -52,7 +52,8 @@ const InstaPage = ({
                     onClick={() => commentButtonHandler(item.code)}
                     className={styles.button}
                   >
-                    <BiCommentDots />
+                    <BiCommentDots />{" "}
+                    {commentData[item.code] ? commentData[item.code].length : 0}
                   </button>
                 </div>
               </div>
