@@ -77,4 +77,22 @@
   .container {
     width: 100%;
   }
+  .button {
+    height: 2rem;
+    width: 6em;
+    cursor: pointer;
+    margin: 0.8rem;
+    /* margin-left: rem; */
+  }
+  .pic {
+    width: 100%;
+    margin: 0;
+  }
+  .comment_section {
+    margin: 0;
+  }
+  .pic_Section {
+    margin: 0;
+    width: 100%;
+  }
 }

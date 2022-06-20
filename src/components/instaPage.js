@@ -17,9 +17,7 @@ const InstaPage = ({
   };
 
   const likeButtonHandler = (id) => {
-    console.log(id);
     postData.map((item, index) => {
-      console.log("item.id", item.id);
       if (item.id === id) {
         setPostData([
           ...postData,
